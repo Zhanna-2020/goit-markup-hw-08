@@ -1,0 +1,34 @@
+
+
+.header-social {
+display: flex;
+color: $accent-color;
+padding-bottom: 48px;
+
+&__item a{
+display: block; 
+padding: 0 10px;  
+font-family: $main-font;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+letter-spacing: 0.02em;
+color: $accent-color;}
+
+
+&__item:first-child a {
+padding-left: 0;
+
+}
+
+&__item:not(:last-child) {  
+border-right: 1px solid $accent-color ;
+ }
+
+ @media screen and (min-width:$tablet) {
+   display: none;   
+ }
+}
+
+
+
