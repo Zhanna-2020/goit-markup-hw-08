@@ -1,0 +1,271 @@
+.footer {
+  background-color: $footer-background-color;
+  border: $border-header;
+
+  .container {
+    display: block;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+}
+
+.container .footer__left {
+  text-align: center;
+  margin-bottom: 60px;
+
+  & a {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: 50%;
+    margin: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 231px;
+    text-align: left;
+  }
+}
+
+.footer__right {
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+    width: 206px;
+    margin-left: 70px;
+  }
+}
+
+.footer-address {
+  margin-top: 20px;
+  color: $light-color;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.footer-contacts {
+  margin-top: 9px;
+  margin-bottom: 0;
+
+  .item + .item {
+    margin-top: 9px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.footer-contacts a {
+  color: $border-color-email;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.join-title {
+  text-align: center;
+  color: $light-color;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.join {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  li + li {
+    margin-left: 10px;
+  }
+  .social-link {
+    fill: $light-color;
+    background-color: $background-icon;
+  }
+
+  .social-link:hover,
+  .social-link:focus {
+    fill: $light-color;
+    background-color: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.subscribe-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $light-color;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.footer__subscribe {
+  display: block;
+  text-align: center;
+  width: 100%;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    width: 570px;
+    height: 86px;
+  }
+}
+
+.subscribe-info {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 0;
+    align-items: center;
+  }
+}
+
+/*display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-items: center;*/
+
+.input-email {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  background-color: transparent;
+  border: none;
+  /*width: 358px;*/
+  height: 50px;
+  border: $border-imput-email;
+  background-color: $footer-background-color;
+  border-radius: 4px;
+  color: $border-color-email;
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+  }
+}
+
+.btn-send {
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 30px;
+  margin-left: 12px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: $light-color;
+  background-color: $accent-color;
+  cursor: pointer;
+}
+
+.btn-send svg {
+  margin-left: 10px;
+}
+
+.input-email:focus {
+  outline: none;
+
+  &::placeholder {
+    font-family: $main-font;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: $border-color-email;
+  }
+
+  &:focus-within + &::placeholder {
+    color: $border-color-email;
+  }
+}

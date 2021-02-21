@@ -1,14 +1,23 @@
-
 /*logo*/
 
 .logo,
 .logo-dark,
 .logo-white {
-  font-family:$second-font;
+  font-family: $second-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  @media screen and (min-width: $desktop) {
+    align-items: baseline;
+    text-align: left;
+  }
 }
 
 .logo {

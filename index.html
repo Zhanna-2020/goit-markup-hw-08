@@ -18,7 +18,7 @@
     <!-- Шапка сайта -->
 <header class="page-header">
     <div class="container">
-        <nav class="menu">
+        <nav class="menu"> 
             <a  href="./index.html"><span class="logo">Web</span><span class="logo-dark">Studio</span></a>
             <button type="button" class="menu-button" 
             aria-expanded="false"
@@ -43,7 +43,7 @@
                         </li>
                     </ul>
                 </nav>
-                <ul class="header-contacts">
+                <ul class="header-contacts"> 
                     <li class="item">
                                     <a href="mailto:info@devstudio.com" class="info mail">
                                         <svg width="16" height="12"> 
@@ -82,80 +82,82 @@
    
     <!-- Основная часть -->
 <main>
-        <section class="hero">
+        <section class="hero banner">
+          <div class="container">
             <div class="top">
-                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="hero-title">Эффективные решения <br />
+                     для вашего бизнеса</h1>
                 <button type="button" class="btn-order" data-modal-open>Заказать услугу</button>
-            </div>
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
+            </div><div class="backdrop is-hidden" data-modal>
+                <div class="modal modal-open">
                     <h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
-                    <form class="form" >
-                        <div class="form-field">        
-                        <label class="label"> Имя
-                          <span class="form-info">
-                              <span class="form-icon">
-                                <svg width="18" height="18">
-                                    <use href="./images/sprite.svg#icon-person"></use>
-                                </svg>
-                              </span>
-                                <input type="text" name="name" class="input">
-                          </span>   
-                        </label>
+                    <form class="form">
+                        <div class="form-field">
+                            <label class="label"> Имя
+                                <span class="form-info">
+                                    <span class="form-icon">
+                                        <svg width="18" height="18">
+                                            <use href="./images/sprite.svg#icon-person"></use>
+                                        </svg>
+                                    </span>
+                                    <input type="text" name="name" class="input">
+                                </span>
+                            </label>
                         </div>
                         <div class="form-field">
-                        <label class="label">Телефон
-                            <span class="form-info">
-                                <span class="form-icon">
-                                    <svg width="18" height="18">
-                                        <use href="./images/sprite.svg#icon-phone"></use>
-                                    </svg>
-                                </span>
+                            <label class="label">Телефон
+                                <span class="form-info">
+                                    <span class="form-icon">
+                                        <svg width="18" height="18">
+                                            <use href="./images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                    </span>
                                     <input type="tel" name="tel" class="input">
-                            </span>
-                        </label>
+                                </span>
+                            </label>
                         </div>
                         <div class="form-field">
-                        <label class="label"> Почта
-                            <span class="form-info">
-                                <span class="form-icon">
-                                    <svg width="18" height="18">
-                                        <use href="./images/sprite.svg#icon-email-black"></use>
-                                    </svg>
+                            <label class="label"> Почта
+                                <span class="form-info">
+                                    <span class="form-icon">
+                                        <svg width="18" height="18">
+                                            <use href="./images/sprite.svg#icon-email-black"></use>
+                                        </svg>
+                                    </span>
+                                    <input type="email" name="mail" class="input">
                                 </span>
-                             <input type="email" name="mail" class="input">
-                            </span>
-                        </label>
+                            </label>
                         </div>
                         <div class="form-comment">
-                        <label class="label"> Комментарий
-                             <textarea name="comment" rows="10" class="textarea" placeholder="Введите текст"></textarea>
-                        </label>
+                            <label class="label"> Комментарий
+                                <textarea name="comment" rows="10" class="textarea" placeholder="Введите текст"></textarea>
+                            </label>
                         </div>
                         <div class="label-checkbox">
                             <label class="agree">
-                             <input class="checkbox"  type="checkbox" name="agree" value="agree" id="checkbox" required>
-                             <span class="agree-icon"></span>
-                                Соглашаюсь с рассылкой и принимаю
-                                 <a href="#" class="agree-link">Условия договора</a>
+                                <input class="checkbox" type="checkbox" name="agree" value="agree" id="checkbox" required>
+                                <span class="agree-icon"></span>
+                                Соглашаюсь с рассылкой и принимаю &nbsp;
+                                <a href="#" class="agree-link">Условия договора</a>
                             </label>
                         </div>
                         <button type="submit" class="btn-submit">Отправить</button>
                     </form>
-
-                <button type="button" class="close" data-modal-close>
-                    <svg width="18" height="18">
-                            <use href="./images/sprite.svg#icon-close" ></use>
+            
+                    <button type="button" class="close" data-modal-close>
+                        <svg width="18" height="18">
+                            <use href="./images/sprite.svg#icon-close"></use>
                         </svg>
-                </button>
+                    </button>
                 </div>
             </div>
-        </section>   
 
-        <section class="section">
+          </div>
+        </section>
+        <section class="section features">
             <div class="container">
             <h2 class="section-title visually-hidden">Oсобенности</h2>
-                <ul class="feature-list">
+                <ul class="features-list">
                     <li class="item">
                         <div class="feature-icon">
                         <svg width="70" height="70">
@@ -196,25 +198,34 @@
             </div>
         </section>
 
-        <section class="section no-padding">
+        <section class="service">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="section__works">
                     <li class="item"> 
-                        <img src="./images/box1.jpg" alt="1" width="370">
+                        <picture>
+                            <source srcset="./images/works/box1_1200.jpg 1x, ./images/works/box1_1200@2x.jpg 2x " media="min-width:1200px" />
+                            <img src="./images/works/box1_1200.jpg" alt="1" width="370">
+                        </picture>
                         <div class="thumb">
                             <h3 class="works-title">десктопные приложения</h3>
                         </div>
                     </li>
                     <li class="item"> 
-                        <img src="./images/box2.jpg" alt="2" width="370">
-                        <div class="thumb">
+                        <picture>
+                            <source srcset="./images/works/box2_1200.jpg 1x, ./images/works/box2_1200@2x.jpg 2x " media="min-width:1200px" />
+                            <img src="./images/works/box2_1200.jpg" alt="2" width="370">
+                        </picture>
+                           <div class="thumb">
                            <h3 class="works-title">мобильные приложения</h3> 
                         </div>
                     </li> 
                     <li class="item"> 
-                        <img src="./images/box3.jpg" alt="3" width="370">
-                        <div class="thumb">
+                        <picture>
+                            <source srcset="./images/works/box3_1200.jpg 1x, ./images/works/box3_1200@2x.jpg 2x " media="min-width:1200px" />
+                            <img src="./images/works/box3_1200.jpg" alt="3" width="370">
+                        </picture>
+                         <div class="thumb">
                         <h3 class="works-title">дизайнерские решения</h3>
                         </div>
                     </li>
@@ -226,11 +237,18 @@
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="section__staff">
-                    <li class="list"><img src="./images/team-card-1.jpg" alt="Product Designer" width="270" class="card">
+                    <li class="list">
+                        <picture>
+                            <source srcset="./images/team/igor480.jpg 1x, ./images/team/igor480@2x.jpg 2x " media="max-width:767px"/>
+                            <source srcset="./images/team/igor768.jpg 1x, ./images/team/igor768@2x.jpg 2x" media="max-width:1199px"/>
+                            <source srcset="./images/team/igor1200.jpg 1x, ./images/team/igor1200@2x.jpg 2x" media="min-width:1200px" />
+                            <img src="./images/team/igor480.jpg" alt="Product Designer" width="270" class="card">
+                        </picture>
+                    
                         <div class="position">
                                 <h3 class="team-member">Игорь Демьяненко</h3>
                                 <p class="profession-title">Product Designer</p>
-                            <ul class="position__social">
+                            <ul class="networks">
                                 <li class="social"> 
                                     <a href="#" class="social-link" aria-label="инстаграм">
                                         <svg width="20" height="20">
@@ -262,7 +280,13 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="list"><img src="./images/team-card-2.jpg" alt="Frontend Developer" width="270" class="card">
+                    <li class="list">
+                        <picture>
+                            <source srcset="./images/team/olga480.jpg 1x, ./images/team/olga480@2x.jpg 2x " media="max-width:767px" />
+                            <source srcset="./images/team/olga768.jpg 1x, ./images/team/olga768@2x.jpg 2x" media="max-width:1199px" />
+                            <source srcset="./images/team/olga1200.jpg 1x, ./images/team/olga1200@2x.jpg 2x" media="min-width:1200px" />
+                            <img src="./images/team/olga480.jpg" alt="Product Designer" width="270" class="card">
+                        </picture>
                         <div class="position">
                                 <h3 class="team-member">Ольга Репина</h3>
                                 <p class="profession-title">Frontend Developer</p>
@@ -298,7 +322,13 @@
                                 </ul>
                         </div>
                     </li>
-                    <li class="list"><img src="./images/team-card-3.jpg" alt="Marketing" width="270" class="card">
+                    <li class="list">
+                        <picture>
+                            <source srcset="./images/team/nikolay480.jpg 1x, ./images/team/nikolay480@2x.jpg 2x " media="max-width:767px" />
+                            <source srcset="./images/team/nikolay768.jpg 1x, ./images/team/nikolay768@2x.jpg 2x" media="max-width:1199px" />
+                            <source srcset="./images/team/nikolay1200.jpg 1x, ./images/team/nikolay1200@2x.jpg 2x" media="min-width:1200px" />
+                            <img src="./images/team/nikolay480.jpg" alt="Product Designer" width="270" class="card">
+                        </picture>
                         <div class="position">
                                 <h3 class="team-member">Николай Тарасов</h3> 
                                 <p class="profession-title">Marketing</p>
@@ -334,7 +364,13 @@
                                 </ul>
                         </div>
                     </li>
-                    <li class="list"><img src="./images/team-card-4.jpg" alt="UI Designer" width="270" class="card">
+                    <li class="list">
+                        <picture>
+                            <source srcset="./images/team/mikle480.jpg 1x, ./images/team/mikle480@2x.jpg 2x " media="max-width:767px" />
+                            <source srcset="./images/team/mikle768.jpg 1x, ./images/team/mikle768@2x.jpg 2x" media="max-width:1199px" />
+                            <source srcset="./images/team/mikle1200.jpg 1x, ./images/team/mikle1200@2x.jpg 2x" media="min-width:1200px" />
+                            <img src="./images/team/mikle480.jpg" alt="Product Designer" width="270" class="card">
+                        </picture>
                         <div class="position">
                                <h3 class="team-member">Михаил Ермаков</h3>
                                <p class="profession-title">UI Designer</p>  
@@ -374,46 +410,46 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section clients">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="section__clients-list">
-                    <li class="clients">
+                    <li class="clients__item">
                         <a href="#" class="logotype"  aria-label="client1">
                         <svg class="" width=44.27 height=49.23>
                             <use href="./images/sprite.svg#icon-logo-1"></use>
                         </svg>
                         </a>
                     </li>
-                    <li class="clients">
+                    <li class="clients__item">
                         <a href="#" class="logotype"  aria-label="client2">
                         <svg width=40 height=52>
                             <use href="./images/sprite.svg#icon-logo-2"></use>
                         </svg>
                         </a>
                     </li>
-                    <li class="clients">
+                    <li class="clients__item">
                         <a href="#" class="logotype"  aria-label="client3">
                         <svg width=41 height=42.6>
                             <use href="./images/sprite.svg#icon-logo-3"></use>
                         </svg>
                         </a>
                     </li>
-                    <li class="clients">
+                    <li class="clients__item">
                         <a href="#" class="logotype"  aria-label="client4">
                         <svg width=79.66 height=42.02>
                             <use href="./images/sprite.svg#icon-logo-4"></use>
                         </svg>
                         </a>
                     </li>
-                    <li class="clients">
+                    <li class="clients__item">
                         <a href="#" class="logotype"  aria-label="client5">
                         <svg width=59 height=47>
                             <use href="./images/sprite.svg#icon-logo-5"></use>
                         </svg>
                         </a>
                     </li>
-                    <li class="clients">
+                    <li class="clients__item">
                         <a href="#" class="logotype"  aria-label="client6">
                         <svg width=88.48 height=45.44>
                             <use href="./images/sprite.svg#icon-logo-6"></use>
@@ -437,7 +473,6 @@
         </div>
         
         <div class="footer__right">
-            <section>
                     <h2 class="join-title">присоединяйтесь</h2>
                     <ul class="join">
                         <li class="social">
@@ -469,21 +504,24 @@
                             </a>
                         </li>
                     </ul>
-            </section>
         </div>
         <div class="footer__subscribe">
             <h2 class="subscribe-title">подпишитесь на рассылку</h2>
-            <form class="subscribe-info">
+            <form >
+                <div class="subscribe-info">
                         <input type="email" name="email" placeholder="E-mail" class="input-email">
                     <button type="submit" class="btn-send">Подписаться
                         <svg  width="20" height="20">
                             <use href="./images/sprite.svg#icon-icon-send"></use>
                         </svg>
                     </button>
+                <div>
             </form>
         </div>
     </div>
 </footer>
+<!--модальное окно-->
+
 <script src="./mobile-menu.js"></script>
 <script src="./modal.js"></script>
 </body>

@@ -1,7 +1,6 @@
-
 .page-header {
-  display: block;
   position: relative;
+  display: block;
   border-bottom: $border-header;
 
   .menu {
@@ -14,52 +13,56 @@
     @media screen and(min-width: $tablet) {
       display: flex;
       align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
       min-height: 80px;
     }
-  
   }
-
 }
-
-
 
 .menu-button {
   position: absolute;
   top: 50%;
-  right: 0px;
+  right: 0;
   margin: 0;
   padding: 0;
   transform: translateY(-50%);
   display: inline-flex;
   border: none;
   background-color: transparent;
-  z-index: 999;
+  z-index: 900;
   cursor: pointer;
-   
-  @media screen and (min-width: $tablet ) {
-    display: none;
-   }
+  transition: fill $main-transition;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
   }
 
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
 
 .menu-button .icon-cross {
-    display: none;
+  display: none;
 }
 
 .menu-button.is-open .icon-cross {
   display: block;
 }
 
-  .menu-button.is-open .icon-menu {
-    display: none;
-  }
+.menu-button.is-open .icon-menu {
+  display: none;
+}
 
- 
-  @media screen and (min-width: $tablet) {
-    .page-header .container {
+@media screen and (min-width: $tablet) {
+  .page-header .container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    }
+    align-items: center;
+    min-height: 80px;
+    width: 100%;
   }
-  
+}

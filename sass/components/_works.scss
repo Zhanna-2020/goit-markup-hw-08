@@ -1,0 +1,42 @@
+.service {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .section__works {
+    display: flex;
+    .item {
+      display: block;
+      position: relative;
+    }
+
+    .item + .item {
+      margin-left: 30px;
+    }
+  }
+
+  .thumb {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: $thumb-bg-color;
+
+    .works-title {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 27px;
+      font-family: $main-font;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $light-color;
+    }
+  }
+}
